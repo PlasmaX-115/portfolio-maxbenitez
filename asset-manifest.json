@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio-maxbenitez/static/css/main.56dad6ce.css",
+    "main.js": "/portfolio-maxbenitez/static/js/main.ee6da49b.js",
+    "static/js/787.1543f740.chunk.js": "/portfolio-maxbenitez/static/js/787.1543f740.chunk.js",
+    "index.html": "/portfolio-maxbenitez/index.html",
+    "main.56dad6ce.css.map": "/portfolio-maxbenitez/static/css/main.56dad6ce.css.map",
+    "main.ee6da49b.js.map": "/portfolio-maxbenitez/static/js/main.ee6da49b.js.map",
+    "787.1543f740.chunk.js.map": "/portfolio-maxbenitez/static/js/787.1543f740.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56dad6ce.css",
+    "static/js/main.ee6da49b.js"
+  ]
+}
