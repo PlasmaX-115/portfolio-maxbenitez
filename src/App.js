@@ -1,72 +1,83 @@
 import React from 'react';
 import './App.css';
+import { FaGithub } from 'react-icons/fa';
 
-const Portfolio = () => {
-  return (
-    <div className="portfolio-container">
-      <header>
-        <div className="name-title-container">
-          <h1>Nombre Completo</h1>
-          <h2>Diseñador Gráfico</h2>
-        </div>
-        <div className="contact-container">
-          <p>tuemail@gmail.com</p>
-          <p>123-456-7890</p>
-        </div>
-      </header>
-      <section className="portfolio">
-        <h3>Portafolio</h3>
-        <div className="project-container">
-          <div className="project">
-            <img src="imagen1.jpg" alt="Proyecto 1" />
-            <h4>Proyecto 1</h4>
-            <p>Descripción del proyecto 1</p>
-          </div>
-          <div className="project">
-            <img src="imagen2.jpg" alt="Proyecto 2" />
-            <h4>Proyecto 2</h4>
-            <p>Descripción del proyecto 2</p>
-          </div>
-          <div className="project">
-            <img src="imagen3.jpg" alt="Proyecto 3" />
-            <h4>Proyecto 3</h4>
-            <p>Descripción del proyecto 3</p>
-          </div>
-        </div>
+const PortfolioItem = ({ title, description, url, imageUrl }) => (
+  <div className="portfolio-item">
+    <img src={imageUrl} alt={title} />
+    <div className="overlay">
+      <div className="overlay-text">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <a href={url} target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+      </div>
+    </div>
+  </div>
+);
+
+const Portfolio = () => (
+  <section id="portfolio">
+    <h2>Portafolio de proyectos</h2>
+    <div className="portfolio-grid">
+      <PortfolioItem
+        title="Proyecto 1"
+        description="Breve descripción del proyecto 1."
+        url="https://www.proyecto1.com"
+        imageUrl="https://via.placeholder.com/300x200"
+      />
+      <PortfolioItem
+        title="Proyecto 2"
+        description="Breve descripción del proyecto 2."
+        url="https://www.proyecto2.com"
+        imageUrl="https://via.placeholder.com/300x200"
+      />
+      <PortfolioItem
+        title="Proyecto 3"
+        description="Breve descripción del proyecto 3."
+        url="https://www.proyecto3.com"
+        imageUrl="https://via.placeholder.com/300x200"
+      />
+    </div>
+    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" className="github-link">
+      <FaGithub /> Ver más proyectos en GitHub
+    </a>
+  </section>
+);
+
+const CV = () => (
+  <div className="cv">
+    <header>
+      <h1>Tu nombre</h1>
+      <p>Tu profesión</p>
+    </header>
+    <main>
+      <section>
+        <h2>Sobre mí</h2>
+        <p>Breve descripción sobre ti.</p>
       </section>
-      <section className="about">
-        <h3>Sobre Mí</h3>
-        <p>Descripción breve sobre ti y tu experiencia en diseño gráfico.</p>
-      </section>
-      <section className="skills">
-        <h3>Habilidades</h3>
+      <section>
+        <h2>Experiencia laboral</h2>
         <ul>
-          <li>Adobe Creative Suite</li>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>Otras habilidades relevantes</li>
+          <li>
+            <h3>Nombre de la empresa</h3>
+            <p>Descripción de tus responsabilidades y logros en la empresa.</p>
+            <p>Fecha de inicio - Fecha de finalización</p>
+          </li>
         </ul>
       </section>
-      <section className="contact">
-        <h3>Contacto</h3>
-        <form>
-          <div className="form-group">
-            <label htmlFor="name">Nombre:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
+      <section>
+        <h2>Formación académica</h2>
+        <ul>
+          <li>
+            <h3>Título de la carrera</h3>
+            <p>Nombre de la universidad</p>
+            <p>Fecha de inicio - Fecha de finalización</p>
+          </li>
+        </ul>
       </section>
-    </div>
-  );
-};
+      <Portfolio />
+    </main>
+  </div>
+);
 
-export default Portfolio;
+export default CV;
