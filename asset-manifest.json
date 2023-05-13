@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-maxbenitez/static/css/main.56dad6ce.css",
-    "main.js": "/portfolio-maxbenitez/static/js/main.ee6da49b.js",
+    "main.css": "/portfolio-maxbenitez/static/css/main.8c572ee6.css",
+    "main.js": "/portfolio-maxbenitez/static/js/main.96c37ef8.js",
     "static/js/787.1543f740.chunk.js": "/portfolio-maxbenitez/static/js/787.1543f740.chunk.js",
+    "static/media/FotoCV.png": "/portfolio-maxbenitez/static/media/FotoCV.584bec67258ee09b8b41.png",
+    "static/media/photography.png": "/portfolio-maxbenitez/static/media/photography.e1ee1dc1af0d94f68346.png",
+    "static/media/PWT2.png": "/portfolio-maxbenitez/static/media/PWT2.b93db6229ac736b7bf5e.png",
+    "static/media/docum.png": "/portfolio-maxbenitez/static/media/docum.1be10ad00b7b3f668bf9.png",
+    "static/media/borregosgaming_azul.png": "/portfolio-maxbenitez/static/media/borregosgaming_azul.e6c17ecb9099bc2316e0.png",
+    "static/media/AAlogo2.png": "/portfolio-maxbenitez/static/media/AAlogo2.27832bf64273ef6cc235.png",
+    "static/media/WWSales.png": "/portfolio-maxbenitez/static/media/WWSales.2f25e29c3f314bd86474.png",
     "index.html": "/portfolio-maxbenitez/index.html",
-    "main.56dad6ce.css.map": "/portfolio-maxbenitez/static/css/main.56dad6ce.css.map",
-    "main.ee6da49b.js.map": "/portfolio-maxbenitez/static/js/main.ee6da49b.js.map",
+    "main.8c572ee6.css.map": "/portfolio-maxbenitez/static/css/main.8c572ee6.css.map",
+    "main.96c37ef8.js.map": "/portfolio-maxbenitez/static/js/main.96c37ef8.js.map",
     "787.1543f740.chunk.js.map": "/portfolio-maxbenitez/static/js/787.1543f740.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56dad6ce.css",
-    "static/js/main.ee6da49b.js"
+    "static/css/main.8c572ee6.css",
+    "static/js/main.96c37ef8.js"
   ]
 }
